@@ -1,4 +1,8 @@
-file=$1
+if [ $# -eq 0 ]; then
+	file="version.h"
+else
+	file=$1
+fi
 
 # Read version.h file ...
 # Read BUILDS_COUNT
