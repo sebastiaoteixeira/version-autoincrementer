@@ -46,7 +46,3 @@ sed -i "s/RC_FILEVERSION_STRING \"$major, $minor, $build, $revision/RC_FILEVERSI
 # Change static const char FULLVERSION_STRING [] = "$major.$minor.$build.$revision" to static const char FULLVERSION_STRING [] = "$major.$new_minor.$new_build.$new_revision"
 sed -i "s/static const char FULLVERSION_STRING \[\] = \"$major.$minor.$build.$revision\";/static const char FULLVERSION_STRING \[\] = \"$major.$new_minor.$new_build.$new_revision\";/g" $file
 
-bash incBuildCount.sh $file
-
-
-
